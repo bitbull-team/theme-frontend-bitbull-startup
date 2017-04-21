@@ -1,0 +1,28 @@
+{
+  "name": "bitbull/theme-frontend-bitbull-startup",
+  "description": "Magento2 startup theme",
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/theme-frontend-blank": "100.1.*",
+    "magento/framework": "100.1.*"
+  },
+  "authors": [
+    {
+      "name": "Lorena Ramonda",
+      "email": "lorena.ramonda@bitbull.it",
+      "homepage": "http://www.bitbull.it",
+      "role": "Front End Developer"
+    }
+  ],
+  "type": "magento2-theme",
+  "version": "100.0.1",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}
