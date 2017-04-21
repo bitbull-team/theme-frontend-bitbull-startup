@@ -1,6 +1,7 @@
 # Magento2 startup theme
 Basic set of files to enable a new Magento2 theme in admin. This guide refers to Magento 2.1 version.
 
+
 # Installation Instructions
 
 Clone this repo and edit the configuration as follow:
@@ -53,7 +54,7 @@ setting your correct vendor and project name (your theme, in this case) like thi
 
 This name will be used in the composer.json of your Magento2 installation to add it as dependency.
 
-Pay attention that the dependecies' versions of `magento/theme-frontend-blank` and `magento/framework` must refer to the correct versions used in the [composer.json of the Magento2 current version used](https://github.com/magento/magento2/blob/2.1/lib/internal/Magento/Framework/composer.json)
+Pay attention that the dependecies' versions of `magento/theme-frontend-blank` and `magento/framework` must refer to the correct versions used in the [composer.json of Magento/Framework module](https://github.com/magento/magento2/blob/2.1/lib/internal/Magento/Framework/composer.json) and the [composer.json of Magento/Blank theme](https://github.com/magento/magento2/blob/2.1/app/design/frontend/Magento/blank/composer.json) of the Magento2 current version used. You can easily know it by switching the branch on the desired tag.
 
 ## /Magento_Theme/layout/default.xml
 This is not mandatory, but you may want to use this file if your theme is not based on any parent theme or just to change the path (or format only) of your theme's logo ([other cases can be found on the doc](http://devdocs.magento.com/guides/v2.1/frontend-dev-guide/themes/theme-create.html#theme_logo)).
@@ -70,14 +71,11 @@ Consider that, if you add in `/web/images/` an image named logo.svg that has the
 
 ## /web/images/logo-bitbull.png
 Arf, Arf! This image file is just for instance. Delete it and add your correct logo image.
+Consider that if there is already a logo uploaded in the admin panel this will override the one specified in the `/Magento_Theme/layout/default.xml` file. Everything else not set up in the admin panel, for instance the format, will fallback onto the settings written in this file.
 
 ## /etc/view.xml (*)
 This file is required for a theme, but optional if exists in the parent theme.
 The file contains images configuration for all storefront product images and thumbnails and in this repo version the file used is just the same you can find in the blank theme.
-
-# Changelog
-
-* 1.0.0 - First release
 
 
 #Licence
@@ -88,6 +86,7 @@ The file contains images configuration for all storefront product images and thu
 #Developers
 
 Lorena Ramonda (@mobiledesignah): http://www.bitbull.it
+
 
 # Copyright
 
