@@ -80,7 +80,7 @@ The file contains images configuration for all storefront product images and thu
 
 # Developers
 
-Lorena Ramonda (@mobiledesignah): http://www.bitbull.it
+Lorena Ramonda (@loreenaramonda): http://www.bitbull.it
 
 
 # Copyright
